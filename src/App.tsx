@@ -5,6 +5,8 @@ import Dashboard from './pages/dashboard';
 import Signup from './pages/signup';
 import TeacherDashboard from './pages/dashboard/teacherDashboard';
 import StudentDashboard from './pages/dashboard/studentDashboard';
+import Homepage from './pages/homapage';
+
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -20,6 +22,7 @@ function App() {
         <Route path="/Signup" element={<Signup />} />
         <Route path="/TeacherDashboard" element={<TeacherDashboard />} />
         <Route path="/StudentDashboard" element={<StudentDashboard />} />
+        <Route path="/Homepage" element={<Homepage />} />
       </Routes>
     </BrowserRouter>
   );

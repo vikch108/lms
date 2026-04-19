@@ -31,18 +31,17 @@ export default function Login() {
     console.log(error)
     
     
-    if(!profile) {
+    if (!profile) {
       alert('Profile not found')
-    
     }
     
-    if(profile.role === 'student') {
+    if (profile.role === 'student') {
       navigate('/StudentDashboard')
-    }
-    
-    if(profile.role === 'teacher') {
+    } else if (profile.role === 'teacher') {
       navigate('/TeacherDashboard')
     }
+    
+    
   }
   
   
